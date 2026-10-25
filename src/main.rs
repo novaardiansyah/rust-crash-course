@@ -1,13 +1,7 @@
 fn main() {
-  for i in 1..5 {
-    println!("{}", i);
-  }
+  let s1 : String = String::from("Hello");
+  let s2 : String = s1.clone();
 
-  println!("Lift off!");
-
-  let scores : [i32; 3] = [10, 20, 30];
-
-  for score in scores {
-    println!("{}", score);
-  }
+  println!("{}", s1);
+  println!("{}", s2);
 }
