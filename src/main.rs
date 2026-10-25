@@ -1,9 +1,7 @@
 fn main() {
   let number : i32 = 5;
   
-  if number % 2 == 0 {
-    println!("Number is even");
-  } else {
-    println!("Number is odd");
-  }
+  let label : &str = if number % 2 == 0 {"Even"} else {"Odd"};
+
+  println!("label : {}", label);
 }
