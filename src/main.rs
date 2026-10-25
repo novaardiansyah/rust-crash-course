@@ -4,4 +4,10 @@ fn main() {
   }
 
   println!("Lift off!");
+
+  let scores : [i32; 3] = [10, 20, 30];
+
+  for score in scores {
+    println!("{}", score);
+  }
 }
