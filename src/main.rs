@@ -8,5 +8,5 @@ fn great(fullname: &str) {
 }
 
 fn add(a: i32, b: i32) -> i32 {
-  a + b // ! is an expression
+  a + b // ! without return keyword and semicolon is an expression
 }
