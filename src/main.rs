@@ -1,9 +1,10 @@
 fn main() {
-  let s1 : String = String::from("Hello");
-  let mut s2 : String = s1.clone();
+  let s1 : String = String::from("Hello"); // ! Owned string, created in main
+  let len : usize = calculate_length(&s1); // ! s1 is borrowed
 
-  s2.push('!');
+  println!("The length of {} is {}.", s1, len);
+}
 
-  println!("{}", s1);
-  println!("{}", s2);
+fn calculate_length(s: &String) -> usize {
+  s.len()
 }
