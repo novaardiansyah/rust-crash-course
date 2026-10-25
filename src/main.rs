@@ -1,7 +1,18 @@
 fn main() {
-  let number : i32 = 5;
-  
-  let label : &str = if number % 2 == 0 {"Even"} else {"Odd"};
+  let number : i32 = 6;
 
-  println!("label : {}", label);
+  // ! Looping
+  let mut counter = 0;
+
+  let result = loop {
+    counter += 1;
+
+    println!("Counter : {}", counter);
+
+    if counter == number {
+      break counter * 2;
+    }
+  };
+
+  println!("Result : {}", result);
 }
